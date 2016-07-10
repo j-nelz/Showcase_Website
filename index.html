@@ -14,146 +14,23 @@
   <!--Navigation Panel, class selector sets initial "current" section of navigation, LIST styling example-->
   <nav>
     <ul>
-      <li><a href="#zero">Math&nbsp;Problems</a></li>
-      <li><a href="#first">Favorite&nbsp;Movies</a></li>
-      <li><a href="#second">Best&nbsp;Qualities</a></li>
-      <!--Inline styling makes link float right on nav bar-->
-      <li style="float:right;"><a href="#third">Find&nbsp;Out&nbsp;More!</a></li>
+      <li><a href="#zero">Nav1</a></li>
+      <li><a href="#first">Nav2</a></li>
+      <li><a href="#second">Nav3</a></li>
+      <li style="float:right;"><a href="#third">Nav4</a></li>
     </ul>
   </nav>
   <br />
   <br />
   <!--Main Header-->
   <header>
-    <!--Inline styling, Id selectors change font styles-->
-    <h1 Id="toptitle" style="text-align:center">More About Me</h1>
-    <h3 Id="subtitle">Mini Project 6 By Jacob Nelsen</h3>
+    <h1 Id="toptitle" style="text-align:center">Website Hosting</h1>
+    <h3 Id="subtitle">Website Hosting is set up by Jacob Nelsen on GitHub, more to come.</h3>
   </header>
 
 
-  <!--Articles break up body-->
-  <!--div makes combinator work-->
-  <div>
-    <article id="zero">
-      <h2>My Favorite Math&nbsp;Problem is Really&nbsp;Long</h2>
-      <h4>Bernoulli's Equation</h4>
-      <p style="font-family:roman;font-size:160%"><i>v</i><sub>1</sub><sup>2</sup>&nbsp;&#8725;&nbsp;2&nbsp;+&nbsp;gz<sub>1</sub>&nbsp;+&nbsp;P<sub>1</sub>&nbsp;&#8725;&nbsp;&#x03C1; = <i>v</i><sub>2</sub><sup>2</sup>&nbsp;&#8725;&nbsp;2&nbsp;+&nbsp;gz&nbsp;<sub>2</sub>&nbsp;+&nbsp;P<sub>2</sub>&nbsp;&#8725;&nbsp;&#x03C1;</p>
-      <h4>Area of a Circle</h4>
-      <p style="font-family:roman;font-size:160%">A&nbsp;=&nbsp;&pi;&nbsp;r<sup>2</sup></p><br />
-      <!--Class selector for styling-->
-      <div class="topbutton">
-        <a href="#thetop">Back to Top</a>
-      </div>
-    </article>
-  </div>   
-    <br />
-
-    <!--Table Section-->
-    <article id="first">
-      <h2 id="movietable"><span class="emphasize">Favorite</span> Movies</h2>
-
-      <div style="overflow-x:auto;">
-        <table border="1" ;border-collapse="collapse" ;>
-          <tr>
-            <th>Movie</th>
-            <th>Genre</th>
-            <th>Reason</th>
-          </tr>
-          <tr>
-            <td><i>A Beautiful Mind</i></td>
-            <td>Drama</td>
-            <td>Example of how love can change us</td>
-          </tr>
-          <tr>
-            <td><i>Source Code</i></td>
-            <td>Action</td>
-            <td>Time-travel; Alternate Realities</td>
-          </tr>
-          <tr>
-            <td><i>Krampus</i></td>
-            <td>Horror/Comedy</td>
-            <td>Scary and funny</td>
-          </tr>
-          <tr>
-            <td><i>Tommy Boy</i></td>
-            <td>Comedy</td>
-            <td>Classic stupid humor</td>
-          </tr>
-        </table>
-      </div>
-      <br />
-      <div class="topbutton">
-        <a href="#thetop">Back to Top</a>
-      </div>
-    </article>
-    <br />
-    <article id="second">
-      <h2>Jeopardy Squares</h2><br />
-      <div class="jeopardy"><b>$200</b></div>
-      <div class="jeopardy"><b>$200</b></div>
-      <div class="jeopardy"><b>$200</b></div>
-      <div class="jeopardy"><b>$200</b></div>
-      <div class="jeopardy"><b>$300</b></div>
-      <div class="jeopardy"><b>$300</b></div>
-      <div class="jeopardy"><b>$300</b></div>
-      <div class="jeopardy"><b>$300</b></div>
-      <div class="jeopardy"><b>$400</b></div>
-      <div class="jeopardy"><b>$400</b></div>
-      <div class="jeopardy"><b>$400</b></div>
-      <div class="jeopardy-last"><b>$400</b></div>
-      <div class="topbutton">
-        <a href="#thetop">Back to Top</a>
-      </div>
-    </article>
-
-    <br />
-    <article id="third">
-      <h2 id="first">Find Out More!</h2>
-      <p>Fill out the form below to get added to our junk mail list!</p>
-      <figure>
-        <img Id="fiatpic" src="http://i63.tinypic.com/122hopc.jpg" border="0" alt="Jacob with a rented Fiat" style="width:80%">
-        <figcaption style=text-align:center;>You could be like this Fiat!!</figcaption>
-      </figure><br />
-      <form action="yourhandler.php" method="post">
-        <fieldset>
-          <fieldset>
-            <legend>Personal Information</legend>
-            First Name: <br />
-            <input type="text" name="firstname" value="First Name" required/><br /><br /> Last Name: <br />
-            <input type="text" name="lastname" value="Last Name" /><br /><br /> Phone Number: <br />
-            <input type="tel" name="phone" value="(XXX)XXX-XXXX" />
-            <select name="numtype" id="number">
-             <option value="" selected disabled><i>Select</i></option>
-             <option value="home">Home</option>
-             <option value="work">Work</option>
-             <option value="cell">Cell</option>
-             <option value="day">Daytime</option>
-             <option value="evening">Evening</option>
-           </select><br /><br /> Email Address: <br />
-            <input type="email" name="email" value="someone@email.com" /><br /><br /> Additional Comments: <br />
-            <textarea name="comments" cols="30" rows="5">Additional comments here.</textarea>
-          </fieldset>
-          <fieldset>
-            <legend>Preferences</legend>
-            Preferred Contact Method: <br />
-            <input type="radio" name="contactmethod" value="phone" checked>Phone <br />
-            <input type="radio" name="contactmethod" value="email" />Email <br /><br />
-            <input type="checkbox" name="offers" value="emailme" checked />Send me cool offers! <br />
-            <input type="checkbox" name="offers" value="sharemyinfo" checked/>Share my information with other cool websites!
-          </fieldset>
-          <br />
-          <input type="submit" value="submit" />
-        </fieldset>
-      </form>
-      <br />
-      <!--Class selector for styling-->
-      <div class="topbutton">
-        <a href="#thetop">Back to Top</a>
-      </div>
-    </article>
-  </section>
   <footer>
-    <p><b>Mini-Project 6 - Jacob Nelsen </b></p>
+    <p><b>Website Hosting Footer - Jacob Nelsen </b></p>
   </footer>
 </body>
 
