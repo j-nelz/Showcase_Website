@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  
+  <!--JavaScript for Browser support--!>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>YourName Here</title>
+<link rel="stylesheet" type="text/css" href="showcase.css">
+</head>
+
+<body Id="thetop" >
+  <!--Main Header-->
+  <nav>
+    <ul>
+		
+		<li style="background-color:#000000"><a href="#zero">Go To...</a></li>
+		<br/><br/><br/>
+		<!--
+		<li style="border-top:1px solid #434343"><a href="#zero">Mother's Mother</a></li>
+		<li><a href="#zero">Mother's Father</a></li>
+		<li><a href="#zero">Father's Mother</a></li>
+		<li><a href="#zero">Father's Father</a></li>
+		<li><a href="#zero">Mother</a></li>
+		<li><a href="#first">Father</a></li>
+		<li><a href="#second">Me</a></li>
+		<br/><br/><br/>
+		-->
+      <li style="border-top:1px solid #434343"><a href="#zero">Mother</a></li>
+      <li><a href="#first">Father</a></li>
+	  <li><a href="#second">Spouse</a></li>
+	  <li><a href="#third">Child</a></li>
+      <li><a href="index.html">Back to Tree</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1 Id="toptitle" style="text-align:center">My Family Tree</h1>
+    <h3 Id="subtitle">Showcase Website By Jacob Nelsen</h3>
+  </header>
+  <!--Navigation Panel-->
+
+   <br />
+	<article>
+		
+			<img class = "profpic" src = "Bonnie.png" alt = "Bonnie Theobald">
+		
+			<h1>Your Name HERE</h1>
+			<h3>Birth Date:</h3>
+				<p id="birth">13 March 1927</p>
+			<h3>Birth Place:</h3>
+				<p>Hinckley, Utah</p>
+			<h3>Death Date:</h3>
+				<p id="death">23 December 1987</p>
+			<h3>Burial Place:</h3>
+				<p>Salt Lake City, Utah</p>
+			<h3 style = "clear: left">Parents:</h3>
+				<ul>
+					<li><a href="url">Evan Burgess Theobald</a></li>
+					<li><a href="url">Mom's name</a></li>
+				</ul>
+			<h3>Siblings:</h3>
+				<ul class = "char";>
+					<li>FirstOne</li>
+					<li>FirstOne</li>
+					<li>FirstOne</li>
+					<li>FirstOne</li>
+					<li>FirstOne</li>
+				</ul>
+			<h3>Children:</h3>
+				<ul>
+					<li>FirstOne</li>
+					<li>FirstOne</li>
+					<li>FirstOne</li>
+					<li>FirstOne</li>
+					<li>FirstOne</li>
+				</ul>
+			<h4>If she were alive today, she would be <span id="theAge"></span> years old<h4>
+				<script>
+					/*Javascript calculates my age from
+						external js file*/
+					var birth = new Date(1927,3,13);
+					var today = new Date();
+					var age = Math.floor((today - birth)/365/24/60/60/1000);
+					document.getElementById("theAge").innerHTML = age;
+				</script>
+	</article>
+   <br />
+  <footer>
+    <p><b>Showcase Website - Jacob Nelsen </b></p>
+  </footer>
+</body>
+
+</html>
