@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  
+  <!--JavaScript for Browser support--!>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>Mary Doran</title>
+<link rel="stylesheet" type="text/css" href="showcase.css">
+</head>
+
+<body Id="thetop" >
+  <!--Main Header-->
+  <nav>
+    <ul>
+		
+		<li style="background-color:#000000;"><a href="#zero">Go To...</a></li>
+		<br/><br/><br/>
+		<!--
+		<li style="border-top:1px solid #434343"><a href="#zero">Mother's Mother</a></li>
+		<li><a href="#zero">Mother's Father</a></li>
+		<li><a href="#zero">Father's Mother</a></li>
+		<li><a href="#zero">Father's Father</a></li>
+		<li><a href="#zero">Mother</a></li>
+		<li><a href="#first">Father</a></li>
+		<li><a href="#second">Me</a></li>
+		<br/><br/><br/>
+		-->
+      <li style="border-top:1px solid #434343;background-color:#000000;"><a href="#zero">Mother</a></li>
+      <li style="background-color:#000000;"><a href="#zero">Father</a></li>
+	  <li><a href="grandpa1.html">Spouse</a></li>
+	  <li><a href="dad1.html">Child</a></li>
+      <li><a href="index.html">Back to Tree</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1 Id="toptitle" style="text-align:center">My Family Tree</h1>
+    <h3 Id="subtitle">Showcase Website By Jacob Nelsen</h3>
+  </header>
+  <!--Navigation Panel-->
+
+   <br />
+	<article>
+		
+			<img class = "profpic" src = "Mary.jpg" alt = "Mary Doran">
+		
+			<h1>Mary Doran</h1>
+			<h3>Birth Date:</h3>
+				<p id="birth">17 November 1924</p>
+			<h3>Birth Place:</h3>
+				<p>Murray, Utah</p>
+			<h3>Death Date:</h3>
+				<p id="death">17 April 2013</p>
+			<h3>Burial Place:</h3>
+				<p>Millcreek, Utah</p>
+			<div class = "fam">
+			<h3 style = "clear: left">Parents:</h3>
+				<ul>
+					<li>Ludean Miller</li>
+					<li>George Doran</li>
+				</ul>
+			<h3>Siblings:</h3>
+				<ul class = "char";>
+					<li>Belva Doran</li>
+				</ul>
+			<h3>Children:</h3>
+				<ul>
+					<li>Kelly</li>
+					<li>Kay</li>
+					<li><a href = "dad1.html">Scott</a></li>
+				</ul>
+			</div>
+			<h4>If she were alive today, she would be <span id="theAge"></span> years old<h4>
+				<script>
+					/*Javascript calculates my age from
+						external js file*/
+					var birth = new Date(1924,11,17);
+					var today = new Date();
+					var age = Math.floor((today - birth)/365/24/60/60/1000);
+					document.getElementById("theAge").innerHTML = age;
+				</script>
+	</article>
+   <br />
+  <footer>
+    <p><b>Showcase Website - Jacob Nelsen </b></p>
+  </footer>
+</body>
+
+</html>
